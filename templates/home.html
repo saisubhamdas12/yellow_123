@@ -1,0 +1,78 @@
+{% extends 'dummy1.html' %}
+{% block title %}
+<title>login</title>
+{% endblock %}
+
+
+{% block body_block %}
+<div class="mahi">
+    <a href="{% url 'find_maids' %}"><i class="btn btn-success">Book a maids</i></a>
+    
+            
+</div>
+ <div class="pooji">
+    <h3 style="color: red; text-align: center;">All Service</h3>
+</div>
+ <style>
+    .king
+{
+    background-color: ghostwhite;
+    border-radius:45px;
+    height: 120px;
+    width: 350px;
+    position: relative;
+    top:350px;
+    left: 600px;
+    color: black;
+}
+.pooji
+{
+    background-color: ghostwhite;
+    height:60px;
+    width: 100%;
+    color: black;
+    position: relative;
+    top: 470px;
+    
+}
+body
+{
+    background-image: url('');
+    background-size: cover;
+}
+#sravs{
+      
+      color: white;
+      text-shadow: 0 0 15px red; 
+    
+  }
+  td{
+      
+      padding: 5px;
+      border-radius:45px;
+  }
+  img:hover
+  {
+    transform: scale(1.1);
+  }
+  .nvnn
+  {
+    position: relative;
+    top: 450px;
+    background:linear-gradient(45deg,rgb(156, 220, 241),ghostwhite);
+  }
+  .mahi
+  {
+
+    
+    justify-content: space-around;
+    margin-left: 470px;
+    position: relative; 
+    top:40px;
+    font-size: 35px;
+   
+  }
+  
+ </style>
+   
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'dummy1.html' %}
+{% block title %}
+<title>login</title>
+{% endblock %}
+
+
+{% block body_block %}
+
+<br>
+<center style="top: 30px;">
+        <fieldset>
+        <form method='POST' nctype="multipart/form-data">
+            {% csrf_token %}
+            {{book.as_p}}
+            <input type="submit"  value="Booking" class="btn btn-success" >
+        </form>
+</center>
+</div>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'dummy1.html' %}
+{% block title %}
+<title>login</title>
+{% endblock %}
+
+
+{% block body_block %}
+<html>
+<head>
+    <title>Find Maid</title>
+</head>
+<body>
+    <center>
+    <h1>Find a Maid</h1>
+    
+    <form method="POST">
+        {% csrf_token %}
+        <label for="datetime">Select Date and Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime" required>
+        <button type="submit"  value="book emp"class="btn btn-success" style="height: 40px;">Search</button>
+    
+    </form>
+    <br>
+    <br>
+    {% for i in sdd %}
+        <tr>
+        <td>{{ i.start_time}}</td><br>
+        </tr>
+    {% endfor %}
+   
+    </center>
+</body>
+</html>
+{% endblock %}

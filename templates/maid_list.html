@@ -1,0 +1,26 @@
+{% extends 'dummy1.html' %}
+{% block title %}
+<title>login</title>
+{% endblock %}
+
+
+{% block body_block %}
+
+<html>
+<head>
+    <title>Available Maids</title>
+</head>
+<body>
+    <center>
+    <h1>Available Maids</h1>
+        
+        {% for maid in maids %}
+    
+            <br><li>{{ maid.name }} (Rating: {{ maid.rating }})<a href="{% url 'booking' %}"><td><input type="submit" value="book emp"class="btn btn-success" style="height: 40px;"></td></a></li>
+            
+        {% endfor %}
+
+</center>
+</body>
+</html>
+{% endblock %}
